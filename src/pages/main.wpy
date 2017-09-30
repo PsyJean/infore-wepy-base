@@ -1,0 +1,34 @@
+<template>
+  <div class="wrapper">
+    <uploadFile class="upload_module"></uploadFile>
+  </div>
+
+</template>
+
+<style lang="less">
+  .btn_toast {
+    justify-content: center;
+    padding: 3px 20px;
+    border: 2px solid transparent;
+    width: 80%;
+    height: 50px;
+  }
+  .wrapper{
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<script>
+  import wepy from 'wepy'
+  import UploadFile from '../components/uploadFile.wpy'
+
+  export default class MainPage extends wepy.page {
+    components = {
+      uploadFile: UploadFile
+    }
+
+    methods = {}
+
+
+  }
+</script>

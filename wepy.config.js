@@ -1,45 +1,36 @@
 const path = require('path');
-var prod = process.env.NODE_ENV === 'production'
+let prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  wpyExt: '.wpy',
+  eslint: true,
+  wpyExt: ".wpy",
   build: {
     web: {
+      apis: ['showToast', 'showActionSheet', 'showModal'],
+      components: ['navigator', 'button', 'icon', 'progress', 'slider', 'radio', 'radio-group', 'checkbox', 'checkbox-group', 'switch'],
       htmlTemplate: path.join('src', 'index.template.html'),
       htmlOutput: path.join('web', 'index.html'),
       jsOutput: path.join('web', 'index.js')
     }
   },
-  resolve: {
-    alias: {
-      counter: path.join(__dirname, 'src/components/counter')
-    },
-    modules: ['node_modules']
-  },
-  eslint: true,
   compilers: {
-    less: {
-      compress: true
+    sass: {
+      outputStyle: "compressed"
     },
-    /*sass: {
-      outputStyle: 'compressed'
-    },*/
     babel: {
       sourceMap: true,
       presets: [
-        'es2015',
-        'stage-1'
+        "es2015",
+        "stage-1"
       ],
       plugins: [
-        'transform-decorators-legacy',
-        'transform-export-extensions',
-        'syntax-export-extensions'
+        "transform-export-extensions",
+        "syntax-export-extensions",
       ]
     }
-  },
-  plugins: {
   }
-}
+};
+
 
 if (prod) {
 
@@ -57,8 +48,8 @@ if (prod) {
       config: {
       }
     },
-    imagemin: {
-      filter: /\.(jpg|png|jpeg)$/,
+    /*imagemin: {
+      filter: /\.(jpg|png|jpge)$/,
       config: {
         jpg: {
           quality: 80
@@ -67,6 +58,7 @@ if (prod) {
           quality: 80
         }
       }
-    }
+    }*/
   }
 }
+

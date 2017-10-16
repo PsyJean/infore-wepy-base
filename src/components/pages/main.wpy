@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <uploadFile class="upload_module"></uploadFile>
+    首页
   </div>
 
 </template>
@@ -13,20 +13,17 @@
     width: 80%;
     height: 50px;
   }
-  .wrapper{
+
+  .wrapper {
     justify-content: center;
     align-items: center;
   }
 </style>
 <script>
   import wepy from 'wepy'
-  import UploadFile from '../components/uploadFile.wpy'
 
   export default class MainPage extends wepy.page {
-    components = {
-      uploadFile: UploadFile
-    }
-
+    components = {}
     methods = {}
 
 

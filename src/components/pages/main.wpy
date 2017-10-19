@@ -2,7 +2,6 @@
   <div class="wrapper">
     首页
   </div>
-
 </template>
 
 <style lang="less">

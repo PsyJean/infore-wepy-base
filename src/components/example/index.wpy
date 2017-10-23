@@ -56,7 +56,7 @@
 <template>
     <view class="index page">
         <view class="page__hd">
-            <view class="page__title">盈峰微信小程序框架</view>
+            <view class="page__title">盈峰微信程序框架</view>
             <view class="page__desc">本框架是基于wepy和weui完成的一套同信原生视觉体验一致的基础样式库。</view>
         </view>
         <view class="page__bd page__bd_spacing">

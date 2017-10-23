@@ -70,3 +70,12 @@ wepy build --watch
 
 
 
+## 盈峰环境-小程序学习相关资料
+
+#### *[小程序框架wepy文档](https://wepyjs.github.io/wepy/#/)*
+
+#### *[wepy-weui-demo](https://github.com/wepyjs/wepy-weui-demo)*
+
+#### *[微信小程序wepy开发资源汇总](https://github.com/aben1188/awesome-wepy)*
+
+#### *[原生小程序教程](https://mp.weixin.qq.com/debug/wxadoc/dev/)*
